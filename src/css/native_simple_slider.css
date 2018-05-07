@@ -1,0 +1,35 @@
+.m-sliderWrap {
+  position: relative; }
+
+.m-sliderBox {
+  overflow: hidden; }
+
+.m-sliderController {
+  position: absolute;
+  bottom: 20px;
+  width: 200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10; }
+
+.m-sliderController-bar {
+  cursor: pointer;
+  width: 50px;
+  height: 2px;
+  background-color: rgba(100, 100, 100, 0.3);
+  float: left; }
+  .m-sliderController-bar:not(:first-of-type) {
+    margin-left: 25px; }
+
+.m-sliderController-bar-meter {
+  background-color: #fff;
+  height: 100%;
+  width: 0;
+  transition: all 0.1s; }
+
+.m-sliderController-bar:after {
+  display: block;
+  height: 20px;
+  content: "";
+  margin-top: -11px; }
